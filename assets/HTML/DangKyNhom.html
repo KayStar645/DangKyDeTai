@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký nhóm</title>
+    <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/DangKyNhom.css" />
+</head>
+<body onload="onload_DK_Nhom()">
+    <div class="container">
+        <button onclick="window.location = '../../index.html'" id="LogOut">Đăng xuất</button>
+
+        <div class="head">
+            <img src="../img/logo.png" alt="Logo HUFI" />
+        </div>
+        <h1 class="heading">ĐĂNG KÝ NHÓM</h1>
+        <!-- <form method="post"> -->
+        <form onsubmit="return false">
+            <label>Tên nhóm</label>
+            <input id="nameGroup" type="text" placeholder="Nhập tên nhóm" /> <br />
+            <span id="errorNameGroup" ></span><br />
+
+            <label>Số lượng thành viên: </label>
+            <select name="" id="number">
+                <option> 01 </option>
+                <option> 02 </option>
+                <option> 03 </option>
+            </select>
+
+            <div class="ttSV">
+                <p style="margin: 30px 0 6px 0; font-weight: bold; color: red;">Thành viên 1: Nhóm trưởng</p>
+                <label for="">MSSV</label>
+                <input class="info_mssv" type="text" placeholder="Nhập MSSV" readonly="True" />
+                <span class="mssvError"></span>
+
+                <label for="">Họ và tên</label>
+                <input class="info_name" id="name" type="text" placeholder="Nhập họ và tên" readonly="True" /> <br />
+                <span class="nameError"></span>
+            </div>
+
+            <div class="ttSV">
+                <p style="margin: 30px 0 6px 0; font-weight: bold; color: blue;">Thành viên 2:</p>
+                <label for="">MSSV</label>
+                <input class="info_mssv" type="text" placeholder="Nhập MSSV" />
+                <span class="mssvError"></span>
+
+                <label for="">Họ và tên</label>
+                <input class="info_name" id="name" type="text" placeholder="Nhập họ và tên" /> <br />
+                <span class="nameError"></span>
+            </div>
+
+            <div class="ttSV">
+                <p style="margin: 30px 0 6px 0; font-weight: bold; color: blue;">Thành viên 3:</p>
+                <label for="">MSSV</label>
+                <input class="info_mssv" type="text" placeholder="Nhập MSSV" />
+                <span class="mssvError"></span>
+
+                <label for="">Họ và tên</label>
+                <input class="info_name" id="name" type="text" placeholder="Nhập họ và tên" /> <br />
+                <span class="nameError"></span>
+            </div>
+
+            <button onclick="checkDangKyNhom()">Đăng ký</button>
+
+        </form>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>

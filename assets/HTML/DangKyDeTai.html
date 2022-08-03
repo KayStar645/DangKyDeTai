@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký đề tài</title>
+    <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/DangKyDeTai.css" />
+</head>
+<body>
+    <div class="container">
+        <button onclick="window.location = '../../index.html'" id="LogOut">Đăng xuất</button>
+        <div class="head">
+            <img src="../img/logo.png" alt="Logo HUFI" />
+        </div>
+        <h1 class="heading">ĐĂNG KÝ ĐỀ TÀI</h1>
+        <!-- <form method="post"> -->
+        <form onsubmit="return false">
+            
+            <input type="radio" name="DeTai" class="radio" />
+            <label class="DeTai">
+                Thiết kế giao diện website linh kiện điện tử (ĐTDD; Linh kiện
+                điện tử; bán sách).
+            </label>
+            <br />
+
+            <input type="radio" name="DeTai" class="radio" />
+            <label class="DeTai">
+                Thiết kế giao diện website quản lý tin tức (vnexpress.net; 24h.com; Baomoi.com; ...).
+            </label>
+            <br />
+
+            <input type="radio" name="DeTai" class="radio" />
+            <label class="DeTai">
+                Thiết kế website cho một tổ chức giáo dục (hufi.edu.vn;...).
+            </label>
+            <br />
+
+            <input type="radio" name="DeTai" class="radio" />
+            <label class="DeTai">
+                Thiết kế website cho một doanh nghiệp.
+            </label>
+            <br />
+
+            <input type="radio" name="DeTai" class="radio" />
+            <label class="DeTai">
+                Thiết kế website du lịch; dịch vụ.
+            </label>
+            <br />
+
+            <input type="radio" name="DeTai" class="radio" />
+            <label class="DeTai">
+                Khác.
+            </label>
+            <br />
+            <textarea id="deTaiChon"></textarea>
+
+            <button onclick="checkDangKyDeTai()">Đăng ký</button>
+            
+        </form>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>

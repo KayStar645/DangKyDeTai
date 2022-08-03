@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../img/nenAD.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 1200px;
+    position: relative;
+}
+
+.container {
+    background-color: #fff;
+    width: 850px;
+    padding: 0 25px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px 2px #888;
+}
+
+.head {
+    height: 250px;
+}
+
+.head img {
+    width: 100%;
+    
+}
+
+.heading {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: red;
+    font-size: 30px;
+}
+
+#table {
+    margin-top: 20px;
+    border-collapse:collapse;
+}
+
+#table td {
+    padding: 4px 0;
+    text-align: center;
+}
+
+#clear {
+    width: 200px;
+    height: 40px;
+    margin: 20px auto;
+    display: block;
+    margin-top: 20px;
+    background-color: cornflowerblue;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#clear:hover {
+    cursor: pointer;
+}
+
+

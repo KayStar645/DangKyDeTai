@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký tài khoản</title>
+    <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/DangNhap.css" />
+    <link rel="stylesheet" href="../css/DanhKyTaiKhoan.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <img src="../img/logo.png" alt="Logo HUFI" />
+        </div>
+        <h1 class="heading">ĐĂNG KÝ TÀI KHOẢN</h1>
+        <!-- <form method="post"> -->
+        <form onsubmit="return false">
+            <div class="container__left">
+                <label for="">MSSV</label>
+                <input id="mssv" type="text" placeholder="Nhập MSSV" /> <br />
+                <span id="mssvError" class="error">Lỗi</span>
+                
+                <label for="">Mật khẩu</label>
+                <input id="pass" type="password" placeholder="Nhập Password" /> <br />
+                <span id="PassError" class="error">Lỗi</span>                
+            </div>
+
+            <div class="container__right">
+
+                <label for="">Họ và tên</label>
+                <input id="hoTen" type="text" placeholder="Nhập họ và tên" /> <br />
+                <span id="hoTenError" class="error">Lỗi</span>
+
+                <label for="">Nhập lại mật khẩu</label>
+                <input id="RePass" type="password" placeholder="Nhập Password" /> <br />
+                <span id="RePassError" class="error">Lỗi</span>
+            </div>
+
+            <div class="clear"></div>
+
+            <button onclick="checkDangKyTaiKhoan()">Đăng ký</button>
+            
+            <p style="margin-top: 20px; display: block; text-align: right;">
+                <a href="../../index.html">Đăng nhập</a>
+            </p>
+
+        </form>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>

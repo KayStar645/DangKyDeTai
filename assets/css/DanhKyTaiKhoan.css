@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 680px;
+    width: 900px;
+    top: 140px;
+}
+
+form {
+    padding: 10px 20px;
+}
+
+.head {
+    text-align: center;
+    height: 200px;
+}
+
+.head img {
+    width: 80%;
+    height: 100%;
+}
+
+.container__left {
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+
+.container__right {
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+
+span {
+    color: #fff;
+}
+
+.clear {
+    clear: both;
+}
+
+form button {
+    width: 70%;
+    margin-left: 15%;
+}
+
+.error {
+    margin-top: 8px;
+    margin-left: 4px;
+    display: block;
+}
